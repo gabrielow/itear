@@ -1,0 +1,85 @@
+{
+  "brand": {
+    "name": "ITe-Bot",
+    "badge": "Motor Oficial de Automatización WhatsApp",
+    "headline": "Atención inteligente y turnos para tus clientes. Control, privacidad y rendimiento para tu infraestructura.",
+    "subheadline": "Respuestas instantáneas 24/7, asignación interactiva de cupos y derivación a operador en WhatsApp, respaldado por un motor nativo en Go 100% On-Premise.",
+    "version": "v3.0 Go Edition"
+  },
+  "whatsapp": {
+    "phone": "5493743454291",
+    "default_message": "¡Hola! Quisiera consultar sobre turnos, trámites y servicios disponibles.",
+    "cta_text": "Chatear con el Asistente"
+  },
+  "client_features": [
+    {
+      "icon": "🕒",
+      "title": "Atención Instantánea 24/7",
+      "description": "Sin filas ni demoras telefónicas. Tus usuarios reciben respuestas claras y precisas en cualquier momento del día."
+    },
+    {
+      "icon": "🗓️",
+      "title": "Gestión de Turnos y Citas",
+      "description": "Consulta de cupos en tiempo real, selección de franja horaria y recordatorios automáticos por WhatsApp."
+    },
+    {
+      "icon": "📄",
+      "title": "Trámites y Formularios",
+      "description": "Descarga directa de documentos oficiales, requisitos y formularios PDF al celular del ciudadano o cliente."
+    },
+    {
+      "icon": "👤",
+      "title": "Derivación con Operador Humano",
+      "description": "Pausa inteligente del bot y transferencia inmediata a personal de atención cuando se requiere asistencia especial."
+    }
+  ],
+  "technical_features": [
+    {
+      "icon": "⚡",
+      "title": "Motor Go Puro (<5ms Latencia)",
+      "description": "Arquitectura compilada nativa con consumo de memoria inferior a 15MB de RAM. Sin pesadas dependencias de Node.js."
+    },
+    {
+      "icon": "🔒",
+      "title": "100% On-Premise y Soberanía",
+      "description": "Persistencia en SQLite Pure Go con modo WAL. Todos los datos, turnos y contactos permanecen en tu propio servidor."
+    },
+    {
+      "icon": "🛡️",
+      "title": "Orquestador Anti-Ban Heurístico",
+      "description": "Protección de chips con delays aleatorios, simulación de escritura, spintax, pausas nocturnas y calentamiento gradual."
+    },
+    {
+      "icon": "🎨",
+      "title": "Editor Visual DAG & API REST/WS",
+      "description": "Lienzo de diseño Drawflow para flujos conversacionales, emulador sandbox y WebSockets para telemetría en tiempo real."
+    }
+  ],
+  "steps": [
+    {
+      "num": "01",
+      "title": "Conexión Rápida",
+      "description": "Escaneá el código QR oficial de WhatsApp desde el panel para vincular tu línea en segundos."
+    },
+    {
+      "num": "02",
+      "title": "Flujos a Medida",
+      "description": "Diseñá tus menús, preguntas y opciones arrastrando nodos en el editor visual interactivo."
+    },
+    {
+      "num": "03",
+      "title": "Atención Automatizada",
+      "description": "Atendé cientos de interacciones simultáneas con máxima confiabilidad y reportes de auditoría."
+    }
+  ],
+  "contact": {
+    "address": "Ottawa, Jardín América, Misiones",
+    "hours": "Lunes a Viernes de 08:00 a 12:00 hs",
+    "phone": "+54 9 3743 454291",
+    "email": "gabrielow@gmail.com"
+  },
+  "navigation": {
+    "login_text": "Acceso al Panel",
+    "login_url": "/login.html"
+  }
+}

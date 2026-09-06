@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITe-Bot — Plataforma de Automatización WhatsApp & Turnos</title>
+  <meta name="description" content="Automatizá la atención de turnos, consultas y trámites por WhatsApp las 24 horas con un motor Go autónomo, seguro y 100% On-Premise.">
+  <meta name="theme-color" content="#07090e">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+  <!-- ── 1. Navbar Principal ─────────────────────────────────────────────── -->
+  <header class="navbar">
+    <a href="#" class="nav-brand">
+      <img src="assets/logo.svg" alt="ITe-Bot Logo" width="165" height="38">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#soluciones">Soluciones</a></li>
+      <li><a href="#tecnologia">Tecnología Go</a></li>
+      <li><a href="#como-funciona">Cómo Funciona</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="/login.html" class="btn btn-login bind-login-link" id="nav-login-btn">
+        <span>🔐</span> Acceso al Panel
+      </a>
+    </div>
+  </header>
+
+  <!-- ── 2. Hero Section ─────────────────────────────────────────────────── -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="pulse-dot"></span>
+          <span id="hero-badge-text">Motor Oficial de Automatización WhatsApp</span>
+        </div>
+
+        <h1 id="hero-headline">
+          Atención inteligente y turnos para tus clientes.
+          <span class="gradient-text">Control, privacidad y rendimiento</span> para tu infraestructura.
+        </h1>
+
+        <p id="hero-subheadline">
+          Respuestas instantáneas 24/7, asignación interactiva de cupos y derivación a operador en WhatsApp, respaldado por un motor nativo en Go 100% On-Premise.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="https://wa.me/5493743454291" class="btn btn-primary bind-wa-link" id="hero-cta-btn">
+            <span>💬</span> Chatear con el Asistente
+          </a>
+          <a href="#tecnologia" class="btn btn-secondary">
+            <span>⚡</span> Especificaciones Técnicas
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-preview">
+        <img src="assets/bot-preview.svg" alt="Interacción de Turnos y Mensajes en WhatsApp con ITe-Bot" width="380" height="490">
+      </div>
+    </section>
+
+    <!-- ── 3. Sección para Clientes y Usuarios No Técnicos ────────────────── -->
+    <section id="soluciones">
+      <div class="section-header">
+        <div class="badge">Experiencia para el Usuario</div>
+        <h2 class="section-title">Atención humana y automatizada sin esperas</h2>
+        <p class="section-subtitle">
+          Resolvé consultas, asigná citas y entregá formularios directamente en la aplicación que todos tus usuarios ya conocen y usan: WhatsApp.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🕒</div>
+          <h3>Atención Continua 24/7</h3>
+          <p>Tus clientes o ciudadanos reciben respuestas automáticas e inmediatas a cualquier hora del día sin colas ni demoras.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🗓️</div>
+          <h3>Gestión de Turnos y Citas</h3>
+          <p>Selección de fechas y franjas horarias con cupos en tiempo real, confirmación instantánea y recordatorios automáticos.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>Trámites y Formularios</h3>
+          <p>Envío directo de documentos PDF oficiales, requisitos y guías de trámites sin descargas de aplicaciones externas.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Pausa y Operador Humano</h3>
+          <p>Si una consulta requiere atención personalizada, el bot se pausa automáticamente y transfiere el chat a un agente.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── 4. Sección Técnica para Administradores e IT ───────────────────── -->
+  <section id="tecnologia" class="tech-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-tech">Ingeniería & Seguridad On-Premise</div>
+        <h2 class="section-title">Construido para Máximo Rendimiento y Privacidad</h2>
+        <p class="section-subtitle">
+          Sin plataformas externas de suscripción ni filtración de datos a terceros. Un binario Go autónomo con control total sobre tu hardware.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <article class="tech-card">
+          <span class="tech-badge">Arquitectura Go Nativa</span>
+          <h3><span>⚡</span> Latencia &lt;5ms y Mínimo Consumo</h3>
+          <p>Compilado estático en Go sin dependencias pesadas de Node.js o Python. Utiliza menos de 15MB de memoria RAM en producción y opera fluido en servidores modestos o Raspberry Pi.</p>
+        </article>
+
+        <article class="tech-card">
+          <span class="tech-badge">Soberanía de Datos</span>
+          <h3><span>🔒</span> 100% On-Premise con SQLite Puro</h3>
+          <p>Persistencia relacional con modo WAL local. Las conversaciones, historiales de turnos y bases de datos residen exclusivamente en tus instalaciones físicas, cumpliendo normativas de privacidad.</p>
+        </article>
+
+        <article class="tech-card">
+          <span class="tech-badge">Anti-Ban Engine</span>
+          <h3><span>🛡️</span> Protección Heurística de Chips</h3>
+          <p>Mecanismo avanzado de delays variables con ritmo humano, micro-pausas de lectura, motor de Spintax, horarios de descanso configurables y calentamiento progresivo de líneas.</p>
+        </article>
+
+        <article class="tech-card">
+          <span class="tech-badge">Editor Visual DAG</span>
+          <h3><span>🎨</span> Lienzo Drawflow & API REST/WS</h3>
+          <p>Construcción de árboles de decisión y flujos conversacionales mediante nodos arrastrables, emulador sandbox de pruebas y telemetría en tiempo real mediante WebSockets.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- ── 5. Sección Cómo Funciona ───────────────────────────────────────── -->
+    <section id="como-funciona">
+      <div class="section-header">
+        <div class="badge">Flujo de Implementación</div>
+        <h2 class="section-title">En marcha en tres pasos simples</h2>
+        <p class="section-subtitle">Puesta en marcha ágil sin configuraciones enredadas ni contratos atados a la nube.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">01</div>
+          <h3>Vinculación Oficial</h3>
+          <p>Escaneá el código QR desde WhatsApp para conectar la línea telefónica institucional de forma segura.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">02</div>
+          <h3>Diseño de Flujos</h3>
+          <p>Personalizá tus mensajes de bienvenida, opciones de turnos y preguntas frecuentes desde el editor visual.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">03</div>
+          <h3>Atención Escalable</h3>
+          <p>El bot atiende a cientos de usuarios en simultáneo con notificaciones en tiempo real al panel administrativo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── 6. Banner de Llamada al Panel de Operadores ───────────────────── -->
+    <section>
+      <div class="cta-banner">
+        <h2>¿Sos operador o administrador de la plataforma?</h2>
+        <p>
+          Accedé al panel central para supervisar conversaciones en vivo, administrar turnos, configurar el árbol de flujos o auditar los registros del sistema.
+        </p>
+        <a href="/login.html" class="btn btn-primary bind-login-link" style="font-size: 1.05rem; padding: 0.9rem 2.2rem;">
+          <span>🔐</span> Ingresar al Panel Administrativo
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── 7. Footer Institucional y Contacto ──────────────────────────────── -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="ITe-Bot Logo" width="160" height="36">
+          <p>Plataforma de automatización inteligente y gestión de turnos para WhatsApp. Potente, autónoma y privada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#soluciones">Soluciones para Clientes</a></li>
+            <li><a href="#tecnologia">Especificaciones Go</a></li>
+            <li><a href="#como-funciona">Cómo Funciona</a></li>
+            <li><a href="/login.html" class="bind-login-link">Acceso al Panel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Oficial</h4>
+          <ul>
+            <li id="contact-address">Ottawa, Jardín América, Misiones</li>
+            <li id="contact-hours">Lunes a Viernes de 08:00 a 12:00 hs</li>
+            <li>Tel: <span id="contact-phone">+54 9 3743 454291</span></li>
+            <li>Email: <a id="contact-email" href="mailto:gabrielow@gmail.com">gabrielow@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year">2026</span> <strong class="bind-brand-name">ITe-Bot</strong>. Todos los derechos reservados.
+        </div>
+        <div>
+          Arquitectura On-Premise Pure Go • WhatsApp E2EE Engine
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── 8. Botón Flotante de WhatsApp ───────────────────────────────────── -->
+  <a href="https://wa.me/5493743454291" class="floating-whatsapp bind-wa-link" aria-label="Chatear por WhatsApp con el bot" title="Chatear con el Asistente">
+    💬
+  </a>
+
+  <!-- Script Cliente Ligero -->
+  <script src="landing.js"></script>
+</body>
+</html>
