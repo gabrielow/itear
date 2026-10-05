@@ -3,10 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>ITe-Bot — Plataforma de Automatización WhatsApp & Turnos</title>
   <meta name="description" content="Automatizá la atención de turnos, consultas y trámites por WhatsApp las 24 horas con un motor Go autónomo, seguro y 100% On-Premise.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ite.ar/">
   <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Redes Sociales y WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ITe-Bot">
+  <meta property="og:title" content="ITe-Bot — Plataforma de Automatización WhatsApp & Turnos">
+  <meta property="og:description" content="Automatizá la atención de turnos, consultas y trámites por WhatsApp las 24 horas con un motor Go autónomo, seguro y 100% On-Premise.">
+  <meta property="og:url" content="https://ite.ar/">
+  <meta property="og:image" content="https://ite.ar/assets/logo.svg">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ITe-Bot — Plataforma de Automatización WhatsApp & Turnos">
+  <meta name="twitter:description" content="Automatizá la atención de turnos, consultas y trámites por WhatsApp las 24 horas con un motor Go autónomo, seguro y 100% On-Premise.">
+  <meta name="twitter:image" content="https://ite.ar/assets/logo.svg">
+
+  <!-- Iconos y Manifest PWA -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Datos Estructurados Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "ITe-Bot",
+        "operatingSystem": "Linux, Windows",
+        "applicationCategory": "BusinessApplication",
+        "description": "Plataforma de automatización de turnos y atención por WhatsApp con motor On-Premise en Go.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "ITe-Bot",
+        "url": "https://ite.ar",
+        "telephone": "+5493743454291",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ottawa",
+          "addressLocality": "Jardín América",
+          "addressRegion": "Misiones",
+          "addressCountry": "AR"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="landing.css">
 </head>
 <body>
@@ -171,16 +229,21 @@
       </div>
     </section>
 
-    <!-- ── 6. Banner de Llamada al Panel de Operadores ───────────────────── -->
+    <!-- ── 6. Banner de Conversión Directa ─────────────────────────────── -->
     <section>
       <div class="cta-banner">
-        <h2>¿Sos operador o administrador de la plataforma?</h2>
+        <h2>¿Querés automatizar la atención y turnos en tu organización?</h2>
         <p>
-          Accedé al panel central para supervisar conversaciones en vivo, administrar turnos, configurar el árbol de flujos o auditar los registros del sistema.
+          Implementá ITe-Bot en tu propia infraestructura con soberanía de datos absoluta, sin abonos mensuales por mensaje y con soporte técnico directo.
         </p>
-        <a href="/login.html" class="btn btn-primary bind-login-link" style="font-size: 1.05rem; padding: 0.9rem 2.2rem;">
-          <span>🔐</span> Ingresar al Panel Administrativo
-        </a>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.25rem;">
+          <a href="https://wa.me/5493743434312" class="btn btn-primary bind-wa-link" style="font-size: 1.05rem; padding: 0.9rem 2.2rem;">
+            <span>💬</span> Solicitar Demostración por WhatsApp
+          </a>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0;">
+          ¿Ya sos operador o administrador del sistema? <a href="/login.html" class="bind-login-link" style="color: var(--accent-cyan); text-decoration: underline;">Ingresá al panel administrativo aquí</a>.
+        </p>
       </div>
     </section>
   </main>
@@ -200,6 +263,8 @@
             <li><a href="#soluciones">Soluciones para Clientes</a></li>
             <li><a href="#tecnologia">Especificaciones Go</a></li>
             <li><a href="#como-funciona">Cómo Funciona</a></li>
+            <li><a href="/aviso-legal.html">Aviso Legal</a></li>
+            <li><a href="/privacidad.html">Política de Privacidad</a></li>
             <li><a href="/login.html" class="bind-login-link">Acceso al Panel</a></li>
           </ul>
         </div>
@@ -220,15 +285,17 @@
           © <span id="current-year">2026</span> <strong class="bind-brand-name">ITe-Bot</strong>. Todos los derechos reservados.
         </div>
         <div>
-          Arquitectura On-Premise Pure Go • WhatsApp E2EE Engine
+          <a href="/aviso-legal.html" style="color: var(--text-secondary); margin-right: 1.2rem;">Aviso Legal</a>
+          <a href="/privacidad.html" style="color: var(--text-secondary); margin-right: 1.2rem;">Privacidad (Zero-Cookies)</a>
+          <span style="color: var(--text-muted);">Arquitectura Pure Go On-Premise</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ── 8. Botón Flotante de WhatsApp ───────────────────────────────────── -->
-  <a href="https://wa.me/5493743434312" class="floating-whatsapp bind-wa-link" aria-label="Chatear por WhatsApp con el bot" title="Chatear con el Asistente">
-    💬
+  <!-- ── 8. Botón Flotante de WhatsApp con Isotipo Oficial ─────────────────── -->
+  <a href="https://wa.me/5493743434312" class="floating-whatsapp bind-wa-link" aria-label="Chatear por WhatsApp con el asistente" title="Chatear con el Asistente">
+    <img src="assets/whatsapp.svg" alt="WhatsApp" width="30" height="30" loading="lazy" decoding="async">
   </a>
 
   <!-- Script Cliente Ligero -->

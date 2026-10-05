@@ -1,0 +1,22 @@
+{
+  "name": "ITe-Bot — Automatización WhatsApp & Turnos",
+  "short_name": "ITe-Bot",
+  "description": "Plataforma de automatización de turnos y atención por WhatsApp con motor On-Premise en Go.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

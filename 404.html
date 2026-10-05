@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada (404) — ITe-Bot</title>
+  <meta name="description" content="La página solicitada no fue encontrada. Regresá al inicio o contactanos por WhatsApp.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#07090e">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="landing.css">
+  <style>
+    .error-container {
+      min-height: calc(100vh - var(--nav-height) - 180px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .error-code {
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--wa-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      letter-spacing: -2px;
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .error-desc {
+      max-width: 540px;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 2.2rem;
+      line-height: 1.6;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="/" class="nav-brand">
+      <img src="assets/logo.svg" alt="ITe-Bot Logo" width="165" height="38">
+    </a>
+
+    <div class="nav-actions">
+      <a href="/" class="btn btn-secondary">
+        <span>🏠</span> Ir al Inicio
+      </a>
+    </div>
+  </header>
+
+  <!-- Error 404 Content -->
+  <main class="container">
+    <div class="error-container">
+      <div class="badge">
+        <span class="pulse-dot"></span>
+        <span>Error de Navegación</span>
+      </div>
+
+      <div class="error-code">404</div>
+      <h1 class="error-title">Página no encontrada</h1>
+      <p class="error-desc">
+        La dirección que ingresaste no existe, ha cambiado o no está disponible temporalmente. No te preocupes, podés volver al portal principal o comunicarte con nuestro equipo.
+      </p>
+
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">
+          <span>🏠</span> Volver al Portal de Inicio
+        </a>
+        <a href="https://wa.me/5493743434312?text=%C2%A1Hola!%20Encontr%C3%A9%20un%20enlace%20roto%20en%20el%20sitio." class="btn btn-secondary">
+          <span>💬</span> Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 1rem;">
+        <div>
+          © <span id="current-year">2026</span> <strong>ITe-Bot</strong>. Todos los derechos reservados.
+        </div>
+        <div>
+          Arquitectura On-Premise Pure Go • WhatsApp E2EE Engine
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

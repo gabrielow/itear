@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /landing.css
+Allow: /landing.js
+Allow: /privacidad.html
+Allow: /aviso-legal.html
+Disallow: /admin
+Disallow: /crm
+Disallow: /api/
+Disallow: /logs/
+
+Sitemap: https://ite.ar/sitemap.xml
