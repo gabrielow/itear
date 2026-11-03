@@ -1,7 +1,7 @@
 {
-  "name": "ITe-Bot — Automatización WhatsApp & Turnos",
-  "short_name": "ITe-Bot",
-  "description": "Plataforma de automatización de turnos y atención por WhatsApp con motor On-Premise en Go.",
+  "name": "ITe Inteligencia Tecnológica — Eficiencia y Soluciones en Procesos Productivos",
+  "short_name": "ITe",
+  "description": "Ingeniería aplicada para aumentar la eficiencia productiva: robótica y control de movimiento por cómputo, agro-IoT, madera, frigoríficos, logística B2B/B2C y sistemas ERP/CRM.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#07090e",

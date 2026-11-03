@@ -1,67 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" width="100%" height="100%" fill="none">
   <defs>
-    <linearGradient id="phone-border" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="frame-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
       <stop offset="100%" stop-color="#25D366"/>
     </linearGradient>
-    <filter id="phone-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
-      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#25D366" flood-opacity="0.15"/>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000000" flood-opacity="0.65"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#25D366" flood-opacity="0.14"/>
     </filter>
   </defs>
 
-  <!-- Phone Frame -->
-  <rect x="20" y="20" width="380" height="500" rx="36" fill="#0d1117" stroke="url(#phone-border)" stroke-width="2.5" filter="url(#phone-shadow)"/>
-  
-  <!-- Notch / Speaker -->
-  <rect x="150" y="32" width="120" height="14" rx="7" fill="#1e293b"/>
-  <circle cx="165" cy="39" r="3" fill="#334155"/>
+  <!-- Marco Principal Dispositivo / Consola Móvil -->
+  <rect x="18" y="16" width="384" height="528" rx="32" fill="#0b101b" stroke="url(#frame-border)" stroke-width="2.2" filter="url(#card-shadow)"/>
 
-  <!-- Chat Header -->
-  <rect x="23" y="58" width="374" height="60" fill="#161f2e"/>
-  <!-- Avatar -->
-  <circle cx="58" cy="88" r="18" fill="#141026" stroke="#25D366" stroke-width="2"/>
-  <text x="50" y="93" font-size="14" fill="#25D366">🤖</text>
-  <!-- Name & Status -->
-  <text x="86" y="83" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff">ITe-Bot Oficial</text>
-  <circle cx="89" cy="95" r="3.5" fill="#25D366"/>
-  <text x="98" y="98" font-family="'Inter', sans-serif" font-size="11" fill="#25D366" font-weight="500">en línea • 24/7</text>
+  <!-- Barra Superior -->
+  <rect x="152" y="28" width="116" height="12" rx="6" fill="#1e293b"/>
+  <circle cx="166" cy="34" r="2.8" fill="#38bdf8"/>
 
-  <!-- Chat Background Pattern hint -->
-  <rect x="23" y="118" width="374" height="398" fill="#0a0e17" rx="0"/>
+  <!-- Cabecera de Canal Unificado -->
+  <rect x="20" y="50" width="380" height="62" fill="#111927"/>
+  <circle cx="52" cy="81" r="18" fill="#0d1321" stroke="#25D366" stroke-width="2"/>
+  <path d="M 43 81 L 48 81 L 50 75 L 54 87 L 56 81 L 61 81" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="77" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">ITe • Eficiencia &amp; Telemetría</text>
+  <circle cx="84" cy="92" r="3.5" fill="#25D366"/>
+  <text x="93" y="95" font-family="'Inter', system-ui, sans-serif" font-size="10.2" font-weight="600" fill="#25D366">Planta, Campo y ERP conectados a WhatsApp</text>
 
-  <!-- Message 1: User -->
-  <g transform="translate(190, 140)">
-    <rect width="190" height="42" rx="14" fill="#005c4b"/>
-    <text x="14" y="26" font-family="'Inter', sans-serif" font-size="12" fill="#ffffff">¡Hola! Necesito un turno</text>
-    <text x="155" y="36" font-family="'Inter', sans-serif" font-size="9" fill="#9ca3af">10:42</text>
+  <!-- Fondo Área de Reportes -->
+  <rect x="20" y="112" width="380" height="430" rx="0" fill="#080c14"/>
+
+  <!-- Tarjeta 1: Agro, Avicultura, Ganadería y Piscicultura -->
+  <g transform="translate(34, 126)">
+    <rect width="352" height="86" rx="12" fill="#111a29" stroke="#1e3a2f" stroke-width="1.2"/>
+    <rect x="12" y="11" width="106" height="18" rx="9" fill="#0f291e"/>
+    <text x="20" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.2" font-weight="700" fill="#25D366">● AGRO &amp; CRIANZA</text>
+    <text x="292" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.5" fill="#64748b">03:14 hs</text>
+    <text x="14" y="45" font-family="'Inter', system-ui, sans-serif" font-size="11.8" font-weight="700" fill="#f1f5f9">🐔🐟 Galpón #3 y Estanque #2 Estables</text>
+    <text x="14" y="62" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#94a3b8">Galpón 25.4 °C (Extractores OK) • O2 en 5.8 mg/L</text>
+    <text x="14" y="77" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#38bdf8">✓ Control autónomo local (actúa sin internet)</text>
   </g>
 
-  <!-- Message 2: Bot -->
-  <g transform="translate(40, 196)">
-    <rect width="280" height="110" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <text x="14" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#38bdf8">👋 ¡Hola! Bienvenido a ITe-Bot.</text>
-    <text x="14" y="44" font-family="'Inter', sans-serif" font-size="11.5" fill="#e2e8f0">Por favor, elegí tu opción:</text>
-    <text x="14" y="66" font-family="'Inter', sans-serif" font-size="11.5" fill="#25D366" font-weight="600">1️⃣ Reservar Turno Online</text>
-    <text x="14" y="86" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1">2️⃣ Guía de Trámites y Formularios</text>
-    <text x="245" y="102" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">10:42</text>
+  <!-- Tarjeta 2: Industria de la Madera & Robótica por Cómputo -->
+  <g transform="translate(34, 224)">
+    <rect width="352" height="82" rx="12" fill="#111a29" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="12" y="11" width="128" height="18" rx="9" fill="#0f2236"/>
+    <text x="20" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.2" font-weight="700" fill="#38bdf8">● MADERA &amp; ROBÓTICA</text>
+    <text x="292" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.5" fill="#64748b">09:40 hs</text>
+    <text x="14" y="44" font-family="'Inter', system-ui, sans-serif" font-size="11.8" font-weight="700" fill="#f1f5f9">🌲⚙️ Línea Corte &amp; Secadero Controlados</text>
+    <text x="14" y="61" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#94a3b8">Posicionador multieje exacto • Secadero HR 48%</text>
+    <text x="14" y="75" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#25D366">✓ +Rinde por rollo • Paquete #84 directo al ERP</text>
   </g>
 
-  <!-- Message 3: User Selection -->
-  <g transform="translate(320, 320)">
-    <rect width="60" height="36" rx="14" fill="#005c4b"/>
-    <text x="18" y="23" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">1</text>
-    <text x="32" y="30" font-family="'Inter', sans-serif" font-size="9" fill="#9ca3af">10:43</text>
+  <!-- Tarjeta 3: Frigorífico, Faena y Cadena de Frío -->
+  <g transform="translate(34, 318)">
+    <rect width="352" height="82" rx="12" fill="#111a29" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="12" y="11" width="126" height="18" rx="9" fill="#1e1b38"/>
+    <text x="20" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.2" font-weight="700" fill="#a78bfa">● FRIGORÍFICO &amp; FAENA</text>
+    <text x="292" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.5" fill="#64748b">11:05 hs</text>
+    <text x="14" y="44" font-family="'Inter', system-ui, sans-serif" font-size="11.8" font-weight="700" fill="#f1f5f9">🥩 Pesaje en Riel &amp; Cámara de Frío #1</text>
+    <text x="14" y="61" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#94a3b8">Tropa #12 trazada sin papel • Cámara en -1.8 °C</text>
+    <text x="14" y="75" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#38bdf8">✓ Merma enfriamiento: 1.4% • Etiquetas impresas</text>
   </g>
 
-  <!-- Message 4: Bot Confirmation -->
-  <g transform="translate(40, 370)">
-    <rect width="300" height="116" rx="14" fill="#141f2e" stroke="#25D366" stroke-width="1.5"/>
-    <text x="14" y="25" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#25D366">✅ ¡Turno Confirmado!</text>
-    <text x="14" y="46" font-family="'Inter', sans-serif" font-size="11.5" fill="#f1f5f9">📅 Fecha: Jueves 10 de Septiembre</text>
-    <text x="14" y="66" font-family="'Inter', sans-serif" font-size="11.5" fill="#f1f5f9">⏰ Horario: 08:30 hs (Franja 1)</text>
-    <text x="14" y="86" font-family="'Inter', sans-serif" font-size="11" fill="#38bdf8">Te enviaremos un recordatorio 24h antes.</text>
-    <text x="265" y="108" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">10:43</text>
+  <!-- Tarjeta 4: Logística B2B/B2C & Sistemas ERP/CRM -->
+  <g transform="translate(34, 412)">
+    <rect width="352" height="82" rx="12" fill="#111f24" stroke="#25D366" stroke-width="1.3"/>
+    <rect x="12" y="11" width="136" height="18" rx="9" fill="#0f291e"/>
+    <text x="20" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.2" font-weight="700" fill="#25D366">● LOGÍSTICA B2B/B2C &amp; ERP</text>
+    <text x="292" y="23" font-family="'Inter', system-ui, sans-serif" font-size="9.5" fill="#64748b">11:22 hs</text>
+    <text x="14" y="44" font-family="'Inter', system-ui, sans-serif" font-size="11.8" font-weight="700" fill="#ffffff">🚚📦 Ruta B2B #19 &amp; Despachos B2C</text>
+    <text x="14" y="61" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#cbd5e1">Carga verificada sin errores • Stock atómico (&lt;5 ms)</text>
+    <text x="14" y="75" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#25D366">✓ Cero planillas manuales • Cta. Cte. imputada</text>
   </g>
+
+  <!-- Barra Inferior de Comandos Rápidos -->
+  <rect x="34" y="504" width="352" height="28" rx="14" fill="#131c2e" stroke="#26354d" stroke-width="1"/>
+  <text x="210" y="522" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="10.2" font-weight="600" fill="#94a3b8">⚡ Dato único: Balanza / Máquina ➔ ERP &amp; WhatsApp</text>
 </svg>

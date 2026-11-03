@@ -1,85 +1,224 @@
 {
   "brand": {
-    "name": "ITe-Bot",
-    "badge": "Motor Oficial de Automatización WhatsApp",
-    "headline": "Atención inteligente y turnos para tus clientes. Control, privacidad y rendimiento para tu infraestructura.",
-    "subheadline": "Respuestas instantáneas 24/7, asignación interactiva de cupos y derivación a operador en WhatsApp, respaldado por un motor nativo en Go 100% On-Premise.",
-    "version": "v3.0 Go Edition"
+    "name": "ITe Inteligencia Tecnológica",
+    "short_name": "ITe",
+    "badge": "Ingeniería de Eficiencia • Robótica, Agro-IoT, Industria & ERP",
+    "headline": "Desarrollo de Soluciones Tecnológicas en Procesos Productivos",
+    "subheadline": "Aumentamos la eficiencia y el rinde de tu operación integrando robótica y control de movimiento por cómputo, sensórica agroindustrial, logística B2B/B2C, sistemas ERP/CRM y telemetría directa en tu WhatsApp.",
+    "scope_note": "Relevamiento inicial sin compromiso • Presencial en Misiones y NEA • Software y telemetría a todo el país",
+    "version": "Ingeniería Aplicada v2.0 On-Premise"
   },
   "whatsapp": {
-    "phone": "5493743434312",
-    "default_message": "¡Hola! Quisiera consultar sobre turnos, trámites y servicios disponibles.",
-    "cta_text": "Chatear con el Asistente"
+    "phone": "5493743454291",
+    "default_message": "¡Hola! Quisiera solicitar un relevamiento / diagnóstico técnico inicial sin compromiso para mejorar la eficiencia de mi proceso productivo.",
+    "cta_text": "Solicitar Relevamiento / Diagnóstico Técnico"
   },
-  "client_features": [
+  "stage_descriptions": {
+    "agro": "Eslabón 1 — Producción Primaria, Crianza & Biotecnología: protección climática y biológica autónoma 24/7 para evitar siniestros y mejorar la conversión.",
+    "industria": "Eslabón 2 — Transformación Industrial, Madera, Faena & Robótica: precisión mecánica gobernada por cómputo, control de mermas y captura de datos sin papel.",
+    "logistica": "Eslabón 3 — Logística B2B/B2C, Comercio & Sistemas ERP/CRM: trazabilidad comercial exacta desde la planta o depósito hasta la entrega y cobranza.",
+    "all": "Cadena Productiva Completa (11 áreas): desde el campo y la crianza, pasando por el aserradero o frigorífico, hasta el reparto B2B/B2C y el balance."
+  },
+  "sector_cases": [
     {
-      "icon": "🕒",
-      "title": "Atención Instantánea 24/7",
-      "description": "Sin filas ni demoras telefónicas. Tus usuarios reciben respuestas claras y precisas en cualquier momento del día."
+      "id": "ganaderia",
+      "category": "agro",
+      "tag": "Producción Bovina & Ovina",
+      "icon": "🐂",
+      "title": "Ganadería de Precisión",
+      "pain": "Pesajes lentos u oscilantes cuando el animal se mueve en la manga, registros en cuadernos que se pierden y bebederos lejanos que quedan sin agua.",
+      "intervention": "Celdas de carga para bretes con filtrado digital de movimiento, lectura instantánea de caravanas RFID directo a la ficha de lote y telemetría inalámbrica de nivel en tanques y aguadas.",
+      "efficiency": "+Velocidad de encierre, ganancia diaria de peso medida por individuo y cero hacienda deshidratada.",
+      "wa_message": "¡Hola! Quisiera solicitar un relevamiento técnico para Ganadería (pesaje electrónico en manga, trazabilidad RFID o monitoreo de aguadas)."
     },
     {
-      "icon": "🗓️",
-      "title": "Gestión de Turnos y Citas",
-      "description": "Consulta de cupos en tiempo real, selección de franja horaria y recordatorios automáticos por WhatsApp."
+      "id": "avicultura",
+      "category": "agro",
+      "tag": "Engorde, Postura & Incubación",
+      "icon": "🐔",
+      "title": "Avicultura Tecnificada",
+      "pain": "En clima cálido, 15 minutos sin ventilación o un desvío de temperatura y amoníaco disparan el estrés calórico, frenan el engorde o provocan mortandad masiva.",
+      "intervention": "Automatización integral de ambiente en galpones (extractores, túnel de viento, paneles evaporativos y cortinas motorizadas en lazo local) más medición continua de consumo de agua y alimento.",
+      "efficiency": "Mejor índice de conversión alimenticia, uniformidad de lote y protección autónoma ante cortes eléctricos.",
+      "wa_message": "¡Hola! Quisiera solicitar un relevamiento técnico para Avicultura (automatización climática de galpones, ventilación/cortinas y monitoreo en WhatsApp)."
     },
     {
-      "icon": "📄",
-      "title": "Trámites y Formularios",
-      "description": "Descarga directa de documentos oficiales, requisitos y formularios PDF al celular del ciudadano o cliente."
+      "id": "piscicultura",
+      "category": "agro",
+      "tag": "Acuicultura & Agua",
+      "icon": "🐟",
+      "title": "Piscicultura Intensiva",
+      "pain": "Caídas nocturnas de oxígeno disuelto que arruinan la siembra de meses y sobrecosto en alimento balanceado arrojado cuando el pez no metaboliza.",
+      "intervention": "Sondas sumergibles industriales de O2, temperatura y pH con encendido autónomo de aireadores sin depender de internet y comederos automáticos ajustados a la curva térmica.",
+      "efficiency": "Cero pérdidas por hipoxia nocturna, menor gasto eléctrico en aireación y máximo rinde del alimento.",
+      "wa_message": "¡Hola! Quisiera solicitar un relevamiento técnico para Piscicultura (monitoreo de oxígeno/agua, aireación automática o alimentación)."
     },
     {
-      "icon": "👤",
-      "title": "Derivación con Operador Humano",
-      "description": "Pausa inteligente del bot y transferencia inmediata a personal de atención cuando se requiere asistencia especial."
+      "id": "apicultura",
+      "category": "agro",
+      "tag": "Monitoreo de Apiarios",
+      "icon": "🐝",
+      "title": "Apicultura Inteligente",
+      "pain": "Horas y combustible gastados viajando a monte o chacra sin saber si hay entrada de néctar, y pérdida de calor de cría al abrir cajones en días fríos.",
+      "intervention": "Básculas IoT de ultra bajo consumo bajo colmena y sensores internos que reportan la evolución diaria de peso, inicio/fin de mielada, consumo invernal y alertas de enjambrazón.",
+      "wa_message": "¡Hola! Quisiera solicitar un relevamiento técnico para Apicultura (pesaje continuo de colmenas y telemetría de apiarios).",
+      "efficiency": "Viajes operativos solo cuando hay cosecha o alerta real, cuidando la sanidad y fortaleza de cada colmena."
+    },
+    {
+      "id": "cultivos",
+      "category": "agro",
+      "tag": "Biotecnología & Clima",
+      "icon": "🌱",
+      "title": "Cultivos Tecnológicos: Hidroponia, Aeroponia & In Vitro",
+      "pain": "Raíces dañadas en minutos por fallas de riego o desvíos de pH/EC, y contaminación o pérdida de explantes clonales por inestabilidad térmica en laboratorio.",
+      "intervention": "Dosificación nutritiva en lazo cerrado con bombas peristálticas, pulsos exactos de nebulización aeropónica y cámaras de replicación in vitro con control PID (±0.5 °C) y trazabilidad clonal.",
+      "efficiency": "Crecimiento acelerado homogéneo, ahorro de sales nutritivas y máxima tasa de supervivencia in vitro.",
+      "wa_message": "¡Hola! Quisiera solicitar un relevamiento técnico para Cultivos Tecnológicos (hidroponia, aeroponia o salas de micropropagación in vitro)."
+    },
+    {
+      "id": "madera",
+      "category": "industria",
+      "tag": "Aserradero, Secado & Remanufactura",
+      "icon": "🌲",
+      "title": "Industria de la Madera",
+      "pain": "Bajo aprovechamiento del rollo por posicionamiento manual de corte, tablas rajadas o reviradas por mal control de secadero y descontrol en el stock de paquetes.",
+      "intervention": "Topes y posicionadores de corte gobernados por cómputo, automatización psicrométrica de cámaras de secado (temperatura/humedad), conteo óptico e ingreso directo de paquetes etiquetados al ERP.",
+      "efficiency": "Más pies cuadrados vendibles por cada rollo procesado, secado parejo sin descarte e inventario exacto en playa.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico para Industria de la Madera (automatización de corte/posicionadores, control de secaderos o trazabilidad de paquetes)."
+    },
+    {
+      "id": "frigorifico",
+      "category": "industria",
+      "tag": "Faena, Desposte & Frío",
+      "icon": "🥩",
+      "title": "Frigoríficos y Plantas de Faena",
+      "pain": "Diferencias entre peso vivo, rinde de playa y cámaras; anotaciones manuales húmedas propensas a error, mermas excesivas de frío y riesgo en compresores.",
+      "intervention": "Pesaje electrónico dinámico en riel/noria y básculas de piso conectadas directo al sistema, etiquetado térmico de tropa/media res/caja de desposte y monitoreo 24/7 de cámaras frigoríficas.",
+      "efficiency": "Control quirúrgico de merma y rinde por tropa, trazabilidad sanitaria instantánea y cadena de frío blindada.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico para Frigorífico / Planta de Faena (pesaje en riel, trazabilidad de desposte, control de merma o cámaras de frío)."
+    },
+    {
+      "id": "robotica-movimiento",
+      "category": "industria",
+      "tag": "Cinemática, Ejes & Visión",
+      "icon": "🤖",
+      "title": "Robótica Aplicada, Movimiento por Cómputo & Visión",
+      "pain": "Procesos lentos y agotadores hechos a pulso, o máquinas mecánicamente sanas detenidas porque su electrónica propietaria envejeció y el repuesto cuesta una fortuna.",
+      "intervention": "Gobierno por software de servomotores, actuadores, ejes sincronizados, brazos manipuladores y máquinas CNC con estándares industriales abiertos, paneles HMI claros en español e inspección por visión artificial.",
+      "efficiency": "Ciclos continuos sin fatiga, precisión repetible a la décima de milímetro y recuperación de capital instalado.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico sobre Robótica, Control de Movimiento por Cómputo, modernización de máquina o Visión Artificial."
+    },
+    {
+      "id": "logistica",
+      "category": "logistica",
+      "tag": "Distribución B2B & Entrega B2C",
+      "icon": "🚚",
+      "title": "Logística B2B y B2C Integrada",
+      "pain": "Pedidos mayoristas mal armados, devoluciones por errores de carga, repartos desordenados sin control de temperatura ni confirmación real de entrega al cliente.",
+      "intervention": "Flujo digital continuo desde la preventa B2B o compra B2C: picking verificado por lector de códigos, armado de hojas de ruta, telemetría de frío en tránsito y avisos automáticos de despacho por WhatsApp.",
+      "efficiency": "Menos fletes fallidos, preparación de cargas sin errores de bulto y clientes informados sin llamar al depósito.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico para optimizar Logística B2B / B2C, armado de pedidos y trazabilidad de entregas."
+    },
+    {
+      "id": "sistemas-erp-crm",
+      "category": "logistica",
+      "tag": "Gestión, Costos & BI",
+      "icon": "📊",
+      "title": "Sistemas Informáticos: ERP, CRM & Analítica",
+      "pain": "Empleados tipeando tres veces la misma planilla, sobreventa de mercadería agotada, cuentas corrientes desactualizadas y sistemas lentos con abonos en dólares.",
+      "intervention": "Plataforma transaccional propia en Go (<5 ms) conectada directo a planta y mostrador: reserva atómica de stock, listas mayoristas/minoristas bimonetarias, CRM comercial, contabilidad y tableros gerenciales.",
+      "efficiency": "El dato nace una sola vez y viaja solo hasta la factura y el balance; cero fugas administrativas y soberanía total.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico sobre Sistemas Informáticos de Gestión (ERP, CRM, control de stock y analítica de costos)."
+    },
+    {
+      "id": "atencion-bot",
+      "category": "logistica",
+      "tag": "Ventas, Turnos & Alertas 24/7",
+      "icon": "💬",
+      "title": "Atención Autónoma & Telemetría en Chat",
+      "pain": "Ventas perdidas fuera de horario, teléfonos colapsados respondiendo precios repetitivos, ausentismo en turnos y alarmas de planta vistas demasiado tarde.",
+      "intervention": "Motor conversacional On-Premise en WhatsApp y Telegram integrado en vivo a tu stock, listas B2B/B2C, agenda de turnos con recordatorios y sensores industriales, con pase fluido a humano.",
+      "efficiency": "Recepción de pedidos y turnos las 24 hs sin sumar estructura fija y reacción inmediata ante alertas operativas.",
+      "wa_message": "¡Hola! Quisiera solicitar un diagnóstico técnico para implementar Atención Autónoma por Bot, toma de pedidos o turnos en WhatsApp."
     }
   ],
-  "technical_features": [
+  "engineering_tools": [
     {
-      "icon": "⚡",
-      "title": "Motor Go Puro (<5ms Latencia)",
-      "description": "Arquitectura compilada nativa con consumo de memoria inferior a 15MB de RAM. Sin pesadas dependencias de Node.js."
+      "badge": "Cinemática & Automatización",
+      "icon": "🤖",
+      "title": "Robótica y Control de Movimiento por Cómputo",
+      "summary": "Hacemos que un software gobierne con exactitud cuánto, cuándo y a qué velocidad se mueven motores, sierras, topes, cintas, brazos mecánicos o equipos CNC, reemplazando el ajuste manual a ojo por precisión repetible.",
+      "specs": "Servomotores y steppers en lazo cerrado con encoders, variadores de frecuencia por Modbus, cinemática multieje y CNC abierto (GRBL HAL / LinuxCNC), aislación optoacoplada industrial y paneles táctiles HMI en español."
     },
     {
-      "icon": "🔒",
-      "title": "100% On-Premise y Soberanía",
-      "description": "Persistencia en SQLite Pure Go con modo WAL. Todos los datos, turnos y contactos permanecen en tu propio servidor."
+      "badge": "Hardware, Pesaje & Visión",
+      "icon": "🔌",
+      "title": "Electrónica Dedicada, Pesaje Dinámico & Visión Edge",
+      "summary": "Diseñamos electrónica e instrumentación preparada para soportar vapor de faena, aserrín, barro y ruido eléctrico, capturando pesos reales y calidad visual sin frenar el ritmo de la línea.",
+      "specs": "PCBs a medida (ESP32/STM32), buses RS485/CAN y lazos 4-20 mA, filtrado digital de celdas de carga en rieles y mangas, enlaces rurales LoRa/RF e inspección dimensional y lectura de códigos 1D/2D con OpenCV."
     },
     {
-      "icon": "🛡️",
-      "title": "Orquestador Anti-Ban Heurístico",
-      "description": "Protección de chips con delays aleatorios, simulación de escritura, spintax, pausas nocturnas y calentamiento gradual."
+      "badge": "Software Transaccional (ite-eco)",
+      "icon": "📊",
+      "title": "Sistemas Informáticos ERP, CRM & Logística B2B/B2C",
+      "summary": "Conectamos las balanzas y máquinas de planta directamente con tu inventario, preventa, hojas de ruta y facturación para erradicar las planillas de papel y conocer tu rentabilidad real al instante.",
+      "specs": "Arquitectura compilada en Go (<5 ms), transacciones ACID sin sobreventas en SQLite WAL / PostgreSQL, matriz de precios B2B/B2C, cuentas corrientes, etiquetado/comandas ESC/POS y analítica operativa."
     },
     {
-      "icon": "🎨",
-      "title": "Editor Visual DAG & API REST/WS",
-      "description": "Lienzo de diseño Drawflow para flujos conversacionales, emulador sandbox y WebSockets para telemetría en tiempo real."
+      "badge": "Lazo Local & Mensajería (ite-chat)",
+      "icon": "💬",
+      "title": "IoT Autónomo & Telemetría Amigable en WhatsApp",
+      "summary": "Los automatismos críticos deciden en milisegundos en tu establecimiento aunque se corte internet, y traducen todo en semáforos claros, comandos simples y atención comercial 24/7 en tu celular.",
+      "specs": "Control PID y por histéresis en el borde (Edge), motor Go de ultra bajo consumo (<15 MB RAM), alertas proactivas en WhatsApp y Telegram, comandos bidireccionales, turnero y derivación asistida a operador."
     }
   ],
-  "steps": [
+  "methodology_steps": [
     {
       "num": "01",
-      "title": "Conexión Rápida",
-      "description": "Escaneá el código QR oficial de WhatsApp desde el panel para vincular tu línea en segundos."
+      "title": "Auditoría de Eficiencia y Merma",
+      "description": "Relevamos dónde tu proceso pierde rinde, materia prima, horas-hombre o trazabilidad. Sin compromiso inicial."
     },
     {
       "num": "02",
-      "title": "Flujos a Medida",
-      "description": "Diseñá tus menús, preguntas y opciones arrastrando nodos en el editor visual interactivo."
+      "title": "Integración Físico-Digital Ad-Hoc",
+      "description": "Unimos solo las herramientas necesarias (sensores, robótica/movimiento, ERP o bot) bajo captura única del dato."
     },
     {
       "num": "03",
-      "title": "Atención Automatizada",
-      "description": "Atendé cientos de interacciones simultáneas con máxima confiabilidad y reportes de auditoría."
+      "title": "Puesta en Marcha Llave en Mano",
+      "description": "Montamos, calibramos en planta o campo real y capacitamos a tus operarios con pantallas simples a prueba de error."
+    },
+    {
+      "num": "04",
+      "title": "Operación Soberana & Respaldo",
+      "description": "Todo funciona en tu propia infraestructura sin alquileres en dólares, con soporte directo de quien lo diseñó."
     }
   ],
+  "diagnostic_options": {
+    "sectors": [
+      { "id": "Ganadería / Avicultura / Piscicultura / Apicultura", "label": "🐂🐔🐟 Agro & Crianza" },
+      { "id": "Cultivos Tecnológicos (Hidroponia / Aeroponia / In Vitro)", "label": "🌱 Cultivos / In Vitro" },
+      { "id": "Industria de la Madera / Aserradero / Secadero", "label": "🌲 Industria Madera" },
+      { "id": "Frigorífico / Planta de Faena / Cadena de Frío", "label": "🥩 Frigorífico & Faena" },
+      { "id": "Robótica / Control de Movimiento por Cómputo / Máquina", "label": "🤖 Robótica & Movimiento" },
+      { "id": "Logística B2B-B2C / Sistemas ERP-CRM / Atención Bot", "label": "🚚📊 Logística, ERP & Bot" }
+    ],
+    "goals": [
+      { "id": "aumentar la eficiencia productiva, reducir mermas y eliminar planillas manuales en papel", "label": "📈 +Eficiencia, -Merma & Cero Papel" },
+      { "id": "automatizar maquinaria con robótica, control de movimiento por cómputo o paneles HMI", "label": "🤖 Robótica & Control de Máquina" },
+      { "id": "proteger crianza, secaderos o cámaras de frío con control autónomo y alertas en WhatsApp", "label": "🛡️ Control IoT & Alertas 24/7" },
+      { "id": "integrar stock, logística B2B/B2C, gestión ERP/CRM y atención autónoma", "label": "🚚 Logística B2B/B2C, ERP & Bot" }
+    ]
+  },
   "contact": {
-    "address": "Ottawa, Jardín América, Misiones",
-    "hours": "Lunes a Viernes de 08:00 a 12:00 hs",
+    "address": "Ottawa, Jardín América, Misiones, Argentina",
+    "coverage": "Presencial en Misiones y NEA • Software y telemetría a todo el país",
+    "hours": "Lunes a Viernes de 08:00 a 12:00 y 15:00 a 19:00 hs",
     "phone": "+54 9 3743 454291",
     "email": "gabrielow@gmail.com"
   },
   "navigation": {
-    "login_text": "Acceso al Panel",
+    "login_text": "Acceso Clientes",
     "login_url": "/login.html"
   }
 }
